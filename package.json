@@ -1,15 +1,23 @@
 {
-  "name": "webframe",
-  "version": "1.0.0",
-  "description": "web frame",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "keywords": [
-    "web",
-    "frame"
-  ],
-  "author": "wuyx",
-  "license": "ISC"
+	"name": "webh5frame",
+	"version": "1.0.2",
+	"description": "web frame",
+	"main": "index.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/wuyuxino/webframe"
+	},
+	"dependencies": {
+		"axios": "^0.19.2"
+	},
+	"keywords": [
+		"web",
+		"frame",
+		"H5"
+	],
+	"author": "wuyx",
+	"license": "ISC"
 }
