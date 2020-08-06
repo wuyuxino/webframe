@@ -4,7 +4,9 @@ import {
 	Update,
 	Delete,
 	request,
-	requestFile
+	requestFile,
+	Login,
+	RefreshToken
 } from './hasura/index'
 
 export {
@@ -13,5 +15,7 @@ export {
 	Update,
 	Delete,
 	request,
-	requestFile
+	requestFile,
+	Login,
+	RefreshToken
 }
