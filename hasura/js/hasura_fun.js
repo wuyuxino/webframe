@@ -110,7 +110,7 @@ function Add(serviceDomain, token, data, fun) {
 	).then(req => {
 		fun(req)
 	}).catch(err => {
-		console.log('err-message', err)
+		fun(err)
 	})
 }
 
@@ -130,7 +130,7 @@ function Delete(serviceDomain, token, data, fun) {
 	).then(req => {
 		fun(req)
 	}).catch(err => {
-		console.log('err-message', err)
+		fun(err)
 	})
 }
 
@@ -150,7 +150,7 @@ function Update(serviceDomain, token, data, fun) {
 	).then(req => {
 		fun(req)
 	}).catch(err => {
-		console.log('err-message', err)
+		fun(err)
 	})
 }
 
@@ -170,7 +170,7 @@ function Get(serviceDomain, token, data, fun) {
 	).then(req => {
 		fun(req)
 	}).catch(err => {
-		console.log('err-message', err)
+		fun(err)
 	})
 }
 
