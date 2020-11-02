@@ -2,6 +2,7 @@ import {
 	Get,
 	Add,
 	Update,
+	UpdateId,
 	Delete,
 	request,
 	requestFile
@@ -16,6 +17,7 @@ export {
 	Get,
 	Add,
 	Update,
+	UpdateId,
 	Delete,
 	request,
 	requestFile,

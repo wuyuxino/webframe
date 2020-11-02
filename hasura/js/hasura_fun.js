@@ -154,6 +154,30 @@ function Update(serviceDomain, token, data, fun) {
 	})
 }
 
+function UpdateId(serviceDomain, token, data, fun) {
+	let parameter = {
+		"query": `mutation update_an_` + data.table_name + ` {
+			update_` + data.table_name + `_by_pk(
+				pk_columns: {id: ${JSON.stringify(data.id)}},
+				_set: `+ data.update_field + `
+			)`+ data.callback_field + `
+		}`,
+		"vaiables": null
+	}
+
+	request(
+		{
+			url: serviceDomain,
+			body: JSON.stringify(parameter),
+			token: token,
+		}
+	).then(req => {
+		fun(req)
+	}).catch(err => {
+		fun(err)
+	})
+}
+
 function Get(serviceDomain, token, data, fun) {
 
 	let parameter = {
@@ -178,6 +202,7 @@ export {
 	Get,
 	Add,
 	Update,
+	UpdateId,
 	Delete,
 	request,
 	requestFile

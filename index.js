@@ -9,6 +9,11 @@ import {
 	RefreshToken
 } from './hasura/index'
 
+import {
+	timeFormate,
+
+} from './javascript/index'
+
 export {
 	Get,
 	Add,
@@ -17,5 +22,8 @@ export {
 	request,
 	requestFile,
 	Login,
-	RefreshToken
+	RefreshToken,
+
+	timeFormate,
+
 }
