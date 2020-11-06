@@ -178,10 +178,13 @@ function UpdateId(serviceDomain, token, data, fun) {
 	})
 }
 
-function Get(serviceDomain, token, data, fun, criteria) {
+function Get(serviceDomain, token, data, fun) {
 
 	let parameter = {
-		"query": `query ` + criteria ? criteria : '' + ` {` + data.table_name + `` + data.search_field + `}`,
+		"query": data.criteria ?
+			`query {` + data.table_name + `` + data.criteria + `` + data.search_field + `}`
+			:
+			`query {` + data.table_name + `` + data.search_field + `}`,
 		"vaiables": null
 	}
 
